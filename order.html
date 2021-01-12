@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+   
+  <title>湯明茶樓歡迎您~</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-storage.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+  <!-- Custom CSS/JS-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/order.css">
+
+  <script type="text/javascript">
+    $(function () {
+      /* 按下GoTop按鈕時的事件 */
+      $('#gotop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+        return false;
+      });
+
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+          $('#gotop').fadeIn();
+        } else {
+          $('#gotop').fadeOut();
+        }
+      });
+    });
+  </script>
+</head>
+
+<body background="images/background.jpg">
+  <header>
+    <div class="container">
+      <div class="row ph-row-1">
+        <div class="col-lg-3 col-md-1 col-xs-1 menu">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-display nav-container" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-display nav__bg" style="text-align: center;">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <img src="images/logo.jpg" alt="" class="img-logo">
+                  </a>
+                </li>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    餐廳介紹
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="about.html">關於</a>
+                    <a class="dropdown-item nav-li-a-content" href="Philosophy.html">經營理念</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item li-content">
+                  <a class="nav-link text-body nav-li-a-content .news-content" href="new.html"
+                    style="padding-right: 22px">最新消息
+                  </a>
+                </li>
+                <hr>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    菜單介紹
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="food.html">主餐</a>
+                    <a class="dropdown-item nav-li-a-content" href="drink.html">飲品</a>
+                    <a class="dropdown-item nav-li-a-content" href="cook-secret.html">私廚料理</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    網路預約
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="order.html">預約</a>
+                    <a class="dropdown-item nav-li-a-content" href="InquireOrder.html">預約查詢</a>
+                    <a class="dropdown-item nav-li-a-content" href="CancelOrder.html">取消預約</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item li-content">
+                  <a class="nav-link text-body nav-li-a-content" href="comment.html" style="padding-right: 25px;">留言板
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-9 col-md-11 col-xs-12 div-index">
+          <div class="row ph-row">
+            <div class="col-lg-12 col-md-11 col-xs-12 ph-title">
+              湯明茶樓 我要預約
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <hr>
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item-content">首頁</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">網路預約 - 我要預約</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <div class="form-group row">
+                <div class="row">
+                  <div class="col-lg-5 col-sm-6 label-div">
+                    <label for="number" class="col-form-label abel-div-right">手機號碼：</label>
+                  </div>
+                  <div class="col-lg-5 col-sm-6 label-div-left">
+                    <input type="text" class="form-control-sm" id="number" required>
+                  </div>
+                  <br>
+                  <div class="col-lg-5 col-sm-6 label-div abel-div-right">
+                    <label for="date" class="col-form-label">預約日期：</label>
+                  </div>
+                  <div class="col-lg-5 col-sm-6 label-div-left">
+                    <!-- <input type="date" class="form-control-sm" id="date"> -->
+                    <input type="text" id="datepicker" class="form-control-sm" placeholder="日/月/年" required>
+                    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+                    <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+                    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+                    <script>
+                      $(function () {
+                        $("#datepicker").datepicker({ minDate: 0, maxDate: "+2M" });
+                      });
+                    </script>
+                  </div>
+                  <br>
+                  <div class="col-lg-5 col-sm-6 label-div-right">
+                    <label for="time" class="col-form-label">預約時間：</label>
+                  </div>
+                  <div class="col-lg-5 col-sm-6 label-div-left">
+                    <select class="hours" id="hours" required>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
+                      <option>16</option>
+                      <option>17</option>
+                      <option>18</option>
+                      <option>19</option>
+                      <option>20</option>
+                      <option>21</option>
+                    </select>
+                    <label class="commat">：</label>
+                    <select class="minutes" id="minutes" required>
+                      <option>00</option>
+                      <option>15</option>
+                      <option>30</option>
+                      <option>45</option>
+                    </select>
+                  </div>
+                  <br>
+                  <div class="col-lg-5 col-sm-6 label-div abel-div-right">
+                    <label for="persons" class="col-form-label">預約人數：</label>
+                  </div>
+                  <div class="col-lg-5 col-sm-6 label-div-left">
+                    <input type="number" class="form-control-sm " id="persons" min="0" max="8" required>
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="col-lg-12 col-sm-12 submit-div">
+                    <input type="submit" class="btn btn-primary submit-btn col-form-label" id="btnSubmit" value="確定預約">
+                  </div>
+                </div>
+              </div> <!-- row -->
+              </form>
+            </div> <!-- row-->
+          </div>
+        </div> <!-- row -->
+      </div>
+    </div> <!-- row -->
+    </div>
+  </header>
+  <footer>
+    <div class="container">
+      <div id="gotop">˄</div>
+      <div class="row footer-row">
+        <div class="col-lg-4 col-md-12 footer-content">
+          連絡電話：03 - 527 - 7559
+        </div>
+        <div class="col-lg-4 col-md-12 footer-content">
+          地址：新竹市東區林森路229巷1弄13號
+        </div>
+        <div class="col-lg-4 col-md-12 footer-content">
+          營業時間：周一至周日 11：30 ~ 21：30
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+
+</body>
+<script src="js/order.service.js"></script>
+<script src="js/script.js"></script>
+
+</html>

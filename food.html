@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/food.css">
+
+   
+  <title>湯明茶樓歡迎您~</title>
+  <script type="text/javascript">
+    $(function () {
+      /* 按下GoTop按鈕時的事件 */
+      $('#gotop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+        return false;
+      });
+
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+          $('#gotop').fadeIn();
+        } else {
+          $('#gotop').fadeOut();
+        }
+      });
+    });
+  </script>
+</head>
+
+<body background="images/background.jpg">
+  <header>
+    <div class="container">
+      <div class="row ph-row-1">
+        <div class="col-lg-3 col-md-1 col-xs-1 menu">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-display nav-container" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-display nav__bg" style="text-align: center;">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <img src="images/logo.jpg" alt="" class="img-logo">
+                  </a>
+                </li>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    餐廳介紹
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="about.html">關於</a>
+                    <a class="dropdown-item nav-li-a-content" href="Philosophy.html">經營理念</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item li-content">
+                  <a class="nav-link text-body nav-li-a-content" href="new.html" style="padding-right: 27px;">最新消息
+                  </a>
+                </li>
+                <hr>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    菜單介紹
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="food.html">主餐</a>
+                    <a class="dropdown-item nav-li-a-content" href="drink.html">飲品</a>
+                    <a class="dropdown-item nav-li-a-content" href="cook-secret.html">私廚料理</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    網路預約
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="order.html">預約</a>
+                    <a class="dropdown-item nav-li-a-content" href="InquireOrder.html">預約查詢</a>
+                    <a class="dropdown-item nav-li-a-content" href="CancelOrder.html">取消預約</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item li-content">
+                  <a class="nav-link text-body nav-li-a-content" href="comment.html" style="padding-right: 25px;">留言板
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-9 col-md-11 col-xs-12 div-index">
+          <div class="row ph-row">
+            <div class="col-lg-12 col-md-11 col-xs-12 ph-title">
+              湯明各式套餐
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <hr>
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12 breadcrumb-col">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#" class="breadcrumb-item-content">首頁</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">菜單-主食</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <div class="row card-row">
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_food1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">海鮮豆腐煲</h4>
+                      <p class="card-text">鮮嫩的豆腐搭配上略帶甜味的海鮮融合出了完美的醬汁，是大人小孩都喜歡的味道</p>
+                    </div>
+                  </div>
+                </div>
+                <!--第一種 -->
+
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_food2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">花雕三杯雞</h4>
+                      <p class="card-text">鮮嫩的雞腿肉加上一些辛香料及獨特醬汁拌炒爆香後，香氣撲鼻而來，鹹味和甜味中又有微微的辣，非常開胃</p>
+                    </div>
+                  </div>
+                </div> <!-- 第二種-->
+
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_food3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">糖醋豬柳</h4>
+                      <p class="card-text">酸酸甜甜的醬汁，搭配多汁的豬肉及時蔬，讓人忍不住口水直流了呢!</p>
+
+                    </div>
+                  </div>
+                </div> <!-- 第三種-->
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_food4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">椒鹽食令鮮魚</h4>
+                      <p class="card-text">當日新鮮的食令魚，用椒鹽提味帶出魚本身的鮮甜，鮮嫩可口。每日限量供應!</p>
+                    </div>
+                  </div>
+                </div> <!-- 第四種-->
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_food5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">香酥魚塊咖哩</h4>
+                      <p class="card-text">有媽媽味的咖哩，配上外酥內嫩的炸魚塊，咬下的酥脆感與入口即化的衝擊，營養又美味</p>
+                    </div>
+                  </div>
+                </div> <!-- 第五種-->
+              </div>
+            </div>
+          </div> <!-- row -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <div class="container">
+      <div id="gotop">˄</div>
+      <div class="row footer-row">
+        <div class="col-lg-4 col-md-12 footer-content">
+          連絡電話：03 - 527 - 7559
+        </div>
+        <div class="col-lg-4 col-md-12 footer-content">
+          地址：新竹市東區林森路229巷1弄13號
+        </div>
+        <div class="col-lg-4 col-md-12 footer-content">
+          營業時間：周一至周日 11：30 ~ 21：30
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

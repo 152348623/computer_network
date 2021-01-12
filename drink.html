@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/drink.css">
+
+   
+  <title>湯明茶樓歡迎您~</title>
+  <script type="text/javascript">
+    $(function () {
+      /* 按下GoTop按鈕時的事件 */
+      $('#gotop').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'quick');   /* 返回到最頂上 */
+        return false;
+      });
+
+      /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+          $('#gotop').fadeIn();
+        } else {
+          $('#gotop').fadeOut();
+        }
+      });
+    });
+  </script>
+</head>
+
+<body background="images/background.jpg">
+  <header>
+    <div class="container">
+      <div class="row ph-row-1">
+        <div class="col-lg-3 col-md-1 col-xs-1 menu">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-menu">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-display nav-container" id="navbarSupportedContent">
+              <ul class="navbar-nav nav-display nav__bg" style="text-align: center;">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">
+                    <img src="images/logo.jpg" alt="" class="img-logo">
+                  </a>
+                </li>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    餐廳介紹
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="about.html">關於</a>
+                    <a class="dropdown-item nav-li-a-content" href="Philosophy.html">經營理念</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item li-content">
+                  <a class="nav-link text-body nav-li-a-content" href="new.html" style="padding-right: 26px;">最新消息
+                  </a>
+                </li>
+                <hr>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    菜單介紹
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="food.html">主餐</a>
+                    <a class="dropdown-item nav-li-a-content" href="drink.html">飲品</a>
+                    <a class="dropdown-item nav-li-a-content" href="cook-secret.html">私廚料理</a>
+                  </div>
+                </li>
+                <hr>
+                <li class="nav-item dropdown li-content">
+                  <a class="nav-link dropdown-toggle nav-li-a-content" href="#" id="navbarDropdownMenuLink"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                    style="color:black;">
+                    網路預約
+                  </a>
+                  <div class="dropdown-menu nav-li-a-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item nav-li-a-content" href="order.html">預約</a>
+                    <a class="dropdown-item nav-li-a-content" href="InquireOrder.html">預約查詢</a>
+                    <a class="dropdown-item nav-li-a-content" href="CancelOrder.html">取消預約</a>
+                  </div>
+                </li>
+                <hr>
+<li class="nav-item li-content">
+                  <a class="nav-link text-body nav-li-a-content" href="comment.html" style="padding-right: 25px;">留言板
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-9 col-md-11 col-xs-12 div-index">
+          <div class="row ph-row">
+            <div class="col-lg-12 col-md-11 col-xs-12 ph-title">
+              湯明各式飲品
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <hr>
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <nav aria-label="breadcrumb breadcrumb-col">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item-content">首頁</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">菜單 - 飲品</li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-lg-12 col-md-11 col-xs-12">
+              <div class="row card-row">
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_tea1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">正阿里山烏龍茶-阿里山石桌區</h4>
+                      <p class="card-text">這是湯明的茶種中以香氣取勝的，一樣是青心烏龍種，發酵程度較低，可聞到高山茶特有的花果香，味道柔和且飽 滿，是台灣高山茶中的經典，不容錯過!!</p>
+                    </div>
+                  </div>
+                </div>
+                <!--第一種 -->
+
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_tea2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">凍頂烏龍-鹿谷鄉凍頂村</h4>
+                      <p class="card-text">
+                        我們凍頂是用青心烏龍種，採收成熟度較高的對口葉，不論是萎凋、攪拌、發酵、烘焙都較重，以滋味韻味獨領風騷。湯明的凍頂有著淡淡的糖果甜味和重焙火的香氣，很是特別。</p>
+                    </div>
+                  </div>
+                </div> <!-- 第二種-->
+
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_tea3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">東方美人茶-苗栗頭份山區</h4>
+                      <p class="card-text">湯明的東美是正統的青心大冇樹種，苗栗頭份山區正夏出產的，發酵程度較高，但口感卻是清新，因有小綠葉蟬咬過，帶有獨特的蜜香，是和大自然合作出來的特殊茶種。
+                      </p>
+                    </div>
+                  </div>
+                </div> <!-- 第三種-->
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_tea4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">青心大冇紅茶-苗栗頭份山區</h4>
+                      <p class="card-text">條索狀青心大冇種，因為有小綠葉蟬咬過，所有會有特殊的花蜜香味哦，入口後又有淡淡的青草味，甘甜醇厚滑潤，沖泡溫度不宜過高，87度最佳。</p>
+                    </div>
+                  </div>
+                </div> <!-- 第四種-->
+                <div class="col-lg-6 col-md-6 col-xs-12 Philosophy-content card_bg">
+                  <div class="card ">
+                    <img class="card-img-top" src="images/menu_tea5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-name">正欉木柵鐵觀音-木柵</h4>
+                      <p class="card-text">
+                        顧名思義「正欉」的意思就是真正的鐵觀音，用真正的鐵觀音樹種以鐵觀音獨特慢火揉的作法，才會有那酸甜清透的果酸滋味，有會有那獨有的觀音韻，而不是惱人的火味。這就是我們所找的「正欉木柵鐵觀音」
+                      </p>
+                    </div>
+                  </div>
+                </div> <!-- 第五種-->
+              </div>
+            </div>
+          </div> <!-- row -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer>
+    <div class="container">
+      <div id="gotop">˄</div>
+      <div class="row footer-row">
+        <div class="col-lg-4 col-md-12 footer-content">
+          連絡電話：03 - 527 - 7559
+        </div>
+        <div class="col-lg-4 col-md-12 footer-content">
+          地址：新竹市東區林森路229巷1弄13號
+        </div>
+        <div class="col-lg-4 col-md-12 footer-content">
+          營業時間：周一至周日 11：30 ~ 21：30
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
