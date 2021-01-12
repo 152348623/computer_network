@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    var url = "http://10.106.10.161:5000/backend/"
-
     var btnSubmit = document.getElementById('btnSubmit');
     var num;
     btnSubmit.onclick = function () {
@@ -23,4 +21,5 @@ $(document).ready(function () {
         orderDataService.sendOrder(orderData);
 
     }
+
 });

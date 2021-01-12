@@ -41,9 +41,18 @@ $(document).ready(function () {
     orderDataService.getAllComment(onSuccess, onFailure);
 
     document.getElementById('btnSendComment').onclick = function () {
-        var parm = { "description": document.getElementById('userComment').value }
-
-        orderDataService.sendCommentFOrOrder(parm, sendCommentSuccess, sendCommentFailure);
+        var userInfo = localStorage.getItem("userInfo");
+        if (userInfo != null) {
+            userInfo = JSON.parse(userInfo);
+            var escapeData = escapeHTML(document.getElementById('userComment').value);
+            var parm = { "userName": userInfo.name, "description":  escapeData }
+            // console.log('AAA document.getElementById(userComment).innerText', document.getElementById('userComment').textContent);
+            // var parm = {"userName": userInfo.name, "description":  document.getElementById('userComment').textContent }
+            orderDataService.sendCommentFOrOrder(parm, sendCommentSuccess, sendCommentFailure);
+        }
+        else{
+            alert("必須要登入才可留言")
+        }
 
     }
 });
