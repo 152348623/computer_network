@@ -17,8 +17,8 @@ var orderDataService = {
 
 var token;
 var userName = "";
-// var url = "https://10.106.10.161:5000/backend/"
-var url = "https://192.168.2.105:5000/backend/"
+var url = "https://10.104.10.167:5000/backend/"
+// var url = "https://192.168.2.105:5000/backend/"
 // var url = "http://127.0.0.1:5000/backend/"
 
 

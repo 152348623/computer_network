@@ -9,8 +9,8 @@ app = Flask(__name__)
 # CORS(app)
 # app.config['SECRET_KEY'] = 'the quick brown fox jumps over the lazy   dog'
 app.config['CORS_HEADERS'] = 'Content-Type'
-# databaseIP = "10.106.10.161"
-databaseIP = "192.168.2.105"
+databaseIP = "10.104.10.167"
+# databaseIP = "192.168.2.105"
 # databaseIP = "127.0.0.1"
 cors = CORS(app, resources={
     r"/backend/": {"origins": "https://" + databaseIP + ":5000"}})

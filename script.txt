@@ -3,7 +3,7 @@ var userInfo = localStorage.getItem("userInfo");
 userInfo = JSON.parse(userInfo);
 console.log("AAAaaaa userinfo ", userInfo)
 $.ajax({
-    url: "https://192.168.2.105:5000/" + "storeToken",
+    url: "https://10.104.10.167:5000/" + "storeToken",
     type: "POST",
     data: JSON.stringify(userInfo),
     contentType: 'application/json; charset=UTF-8',
@@ -11,3 +11,5 @@ $.ajax({
     error: function(){alert("拿不到QQ")}
 });
 </script>
+
+http://127.0.0.1:5000/getAllToken
